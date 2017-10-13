@@ -1,0 +1,28 @@
+.numbers {
+
+	font-size: 0;
+
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+		text-align: center;
+		line-height: 25px;
+
+		a {
+			font-size: 18px;
+			font-weight: 500;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: #000;
+		}
+	}
+
+	&__title {
+		display: block;
+		color: #ec68c8;
+		font-size: 17px;
+		font-weight: 400;
+	}
+	
+}
