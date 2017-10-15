@@ -23,3 +23,21 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: "PT Serif";
+    src: url('../fonts/ptf56f_w.woff2') format('woff2'),
+         url('../fonts/ptf56f_w.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: "PF Din Text Cond Pro - X Thin";
+    src: url('../fonts/pfdintextcondpro-xthin.woff2') format('woff2'),
+         url('../fonts/pfdintextcondpro-xthin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

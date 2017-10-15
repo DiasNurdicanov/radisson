@@ -1,0 +1,15 @@
+.supfooter {
+	padding: 30px 0;
+	background-color: #333333;
+	color: #fff;
+
+	@media (min-width: $desktop-widths) {
+		padding: 15px;
+
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+}

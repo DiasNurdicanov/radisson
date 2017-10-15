@@ -6,6 +6,13 @@
 
 		display: flex;
 		flex-wrap: wrap;
+
+		max-width: 465px;
+		margin: 0 auto;
+
+		@media (min-width: $desktop-widths) {
+			max-width: 100%;
+		}
 	}
 
 	&__item {
@@ -31,6 +38,10 @@
 			position: relative;
 
 			border-bottom: 3px solid #b2b2b2;
+
+			&:hover {
+				background-image: linear-gradient(to bottom, #c5c5c5 0%, #e1e1e1 100%);
+			}
 		}
 
 		&:first-child a,
@@ -68,9 +79,27 @@
 		&:nth-child(6) a::after {
 			display: none;
 		}
+
+		@media (min-width: $desktop-widths) {
+			&:nth-child(3) a,
+			&:nth-child(4) a,
+			&:nth-child(5) a {
+				border-radius: 0;
+			}
+
+			&:nth-child(3) a::after,
+			&:nth-child(4) a::after {
+				display: block;
+			}
+		}
 	}
 
 	.mob-hidden {
 		display: none;
+
+		@media (min-width: 400px) {
+			display: inline;
+		}
 	}
 }
+

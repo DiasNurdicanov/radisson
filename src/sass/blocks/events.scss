@@ -1,0 +1,82 @@
+.events {
+	padding: 20px 0;
+
+	&__list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		width: 50%;
+		font-size: 18px;
+		line-height: 1.25;
+		font-weight: 500;
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+
+		@media (min-width: $desktop-widths) {
+			width: 20%;
+		}
+
+		span {
+			flex-grow: 1;
+		}
+
+		&::before {
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			width: 55px;
+			height: 45px;
+			background: url(../img/icon-corporative.png) no-repeat;
+			background-position: center;
+			margin-right: 2px;
+			flex-shrink: 0;
+		}
+
+		&--weddings::before {
+			background-image: url(../img/icon-weddings.png);
+			height: 47px;
+		}
+
+		&--banquets::before {
+			background-image: url(../img/icon-banquets.png);
+			height: 42px;
+		}
+
+		&--birthdays::before {
+			background-image: url(../img/icon-birthdays.png);
+			height: 46px;
+		}
+
+		&--graduation::before {
+			background-image: url(../img/icon-graduation.png);
+			height: 47px;
+		}
+	}
+}
+
+.shadow {
+	position: relative;
+	top: 10px;
+	height: 20px;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.shadow:before {
+	position: absolute;
+	content: '';
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background-color: #000;
+	border-radius: 50% / 10px; 
+	box-shadow: rgba(0, 0, 0, 0.5) 0 0 35px;
+	clip: rect(20px, auto, 50px, 0);
+}

@@ -1,5 +1,4 @@
 .numbers {
-
 	font-size: 0;
 
 	&__item {
@@ -9,12 +8,16 @@
 		text-align: center;
 		line-height: 25px;
 
-		a {
-			font-size: 18px;
-			font-weight: 500;
-			text-transform: uppercase;
-			text-decoration: none;
-			color: #000;
+		&--row {
+			display: block;
+			width: auto;
+		}
+
+		@media (min-width: $desktop-widths) {
+			display: inline-flex;
+			justify-content: flex-start;
+			width: auto;
+			margin-right: 25px;
 		}
 	}
 
@@ -23,6 +26,25 @@
 		color: #ec68c8;
 		font-size: 17px;
 		font-weight: 400;
+		order: 2;
+		line-height: 1;
 	}
-	
+
+	&__link {
+		font-size: 18px;
+		font-weight: 500;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: #000;
+
+
+		&--white {
+			color: #fff;
+		}
+
+		@media (min-width: $desktop-widths) {
+			margin-right: 5px;
+			font-size: 19px;
+		}
+	}
 }

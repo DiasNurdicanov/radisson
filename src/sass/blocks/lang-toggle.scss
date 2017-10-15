@@ -8,4 +8,8 @@
 	position: absolute;
 	top: 24px;
 	right: 10px;
+
+	@media (min-width: $desktop-widths) {
+		position: static;
+	}
 }

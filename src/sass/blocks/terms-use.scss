@@ -1,0 +1,29 @@
+.terms-use {
+	font-weight: bold;
+	margin: 20px 0;
+
+	p {
+		margin: 0;
+	}
+
+	a {
+		color: inherit;
+	}
+}
+
+.desktop {
+	display: none;
+}
+
+@media (min-width: $desktop-widths) {
+	.terms-use {
+		display: none;
+	}
+
+	.desktop {
+		display: block;
+		width: 240px;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+}

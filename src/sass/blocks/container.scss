@@ -3,10 +3,10 @@
   margin: 0 auto;
   padding: 0 10px;
   position: relative;
+  width: 100%;
 }
 @media (min-width: $desktop-widths) {
   .container {
     max-width: $desktop-widths;
-    padding: 0 30px;
   }
 }

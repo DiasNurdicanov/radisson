@@ -1,0 +1,28 @@
+.features {
+	padding: 20px 0;
+
+	&__title {
+		font-size: 20px;
+		font-weight: 500;
+		margin: 0;
+	}
+
+	&__text {
+		font-family: "Arial", sans-serif;
+		font-size: 15px;
+
+		p {
+			margin: 0;
+
+			&:nth-child(n + 2) {
+				display: none;
+			}
+
+			@media (min-width: $tablet-widths) {
+				&:nth-child(n + 2) {
+					display: block;
+				}
+			}
+		}
+	}
+}

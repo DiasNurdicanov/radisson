@@ -1,0 +1,241 @@
+.rates {
+	padding: 10px 0;
+	position: relative;
+	margin-bottom: 20px;
+
+	&__header {
+		@media (min-width: $desktop-widths) {
+			display: flex;
+			align-items: center;
+			margin-bottom: 15px;
+		}
+	}
+
+	&__title {
+		text-shadow: 0 0 38px #ffffff;
+		color: #1b1617;
+		font-family: "PT Serif", sans-serif;
+		font-size: 21px;
+		line-height: 1.25;
+		font-style: italic;
+		font-weight: normal;
+		text-align: center;
+		margin: 0;
+		margin-bottom: 10px;
+
+		@media (min-width: $desktop-widths) {
+			margin-bottom: 0;
+			font-size: 28px;
+			margin-right: 65px;
+		}
+	}
+
+	&__info {
+		color: #231e1f;
+		font-family: "Arial", sans-serif;
+		font-size: 11px;
+		font-weight: 400;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 10px;
+
+		p {
+			margin: 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: inherit;
+			font-weight: 700;
+			letter-spacing: 0.55px;
+		}
+
+		@media (min-width: $desktop-widths) {
+			margin-bottom: 0;
+			padding-top: 5px;
+
+			br {
+				display: none;
+			}
+		}
+	}
+
+	&__desc {
+		color: #000;
+		font-size: 15px;
+		font-weight: 400;
+	}
+
+	&__subtitle {
+		margin: 0;
+		margin-bottom: 5px;
+		font-size: 20px;
+		line-height: 1.25;
+		font-weight: 500;
+	}
+
+	&__list {
+		font-family: "Arial", sans-serif;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		li {
+			padding-left: 20px;
+			position: relative;
+
+			&::before {
+				content: '—';
+				position: absolute;
+				z-index: 1;
+				left: 0;
+				color: #f343c4;
+			}
+		}
+	}
+
+	&__table {
+		width: 100%;
+		border-top: 1px solid #e4d8b7;
+		border-bottom: 1px solid #e4d8b7;
+		margin-bottom: 20px;
+		border-collapse: collapse;
+
+		thead,
+		tr:nth-child(n + 2) {
+			display: none;
+		}
+
+		td {
+			display: block;
+			font-size: 17px;
+			margin-bottom: 5px;
+		}
+
+		td::before {
+			content: attr(data-label);
+			display: inline-block;
+			vertical-align: baseline;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 1.25;
+
+		}
+
+		td:first-child::before,
+		td:nth-child(2)::before,
+		td:nth-child(3)::before {
+			padding-left: 20px;
+			background: url(../img/icon-man.png) no-repeat;
+			background-position: left center;
+			margin-right: 10px;
+		}
+
+		td:nth-child(2)::before {
+			background-image: url(../img/icon-anhor.png);
+		}
+
+		td:nth-child(3)::before {
+			background-image: url(../img/icon-clock.png);
+		}
+
+		td:nth-child(4)::before,
+		td:nth-child(5)::before {
+			width: 60%;
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+
+		td:last-child {
+			padding: 0;
+			margin-bottom: 0;
+			text-align: right;
+		}
+
+		b {
+			font-weight: 500;
+			font-size: 23px;
+		}
+
+		a {
+			display: inline-block;
+			vertical-align: top;
+			font-size: 11px;
+			line-height: 1.25;
+			color: #fff;
+			text-transform: uppercase;
+			padding: 20px 25px;
+			background: #c8af6d;
+			text-decoration: none;
+			font-family: 'Arial', sans-serif;
+		}
+
+		@media (min-width: $tablet-widths) {
+			display: table;
+			
+			border: none;
+
+			thead {
+				display: table-header-group;
+			}
+
+			tr,
+			tr:nth-child(n + 2) {
+				display: table-row;
+			}
+
+			th {
+				background: #ebebeb;
+				text-align: left;
+				padding: 10px 0;
+				vertical-align: bottom;
+				padding-right: 20px;
+				white-space: nowrap;
+				font-size: 15px;
+				font-weight: 500;
+				line-height: 1.25;
+
+				&:first-child {
+					padding-left: 35px;
+					background: #ebebeb url(../img/icon-man.png) no-repeat;
+					background-position: left 20px bottom 13px;
+				}
+
+				&:nth-child(2) {
+					padding-left: 20px;
+					background: #ebebeb url(../img/icon-anhor.png) no-repeat;
+					background-position: left 0 bottom 13px;
+				}
+
+				&:nth-child(3) {
+					padding-left: 17px;
+					background: #ebebeb url(../img/icon-clock.png) no-repeat;
+					background-position: left 0 bottom 13px;
+				}
+			}
+
+			td {
+				display: table-cell;
+				padding-right: 20px;
+				font-size: 15px;
+				line-height: 1;
+				font-size: 17px;
+				padding: 10px 0;
+				border-bottom: 1px solid #e4d8b7;
+
+				&::before {
+					display: none;
+				}
+
+
+				&:first-child {
+					padding-left: 20px;
+				}
+
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}

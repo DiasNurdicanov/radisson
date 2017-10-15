@@ -1,0 +1,48 @@
+.soc-icons {
+	padding: 10px 0;
+
+	@media (min-width: $desktop-widths) {
+		padding: 0;
+	}
+
+	&__list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		text-align: center;
+		font-size: 0;
+	}
+
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		margin-right: 7px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		a {
+			display: block;
+			color: #fff;
+			border-radius: 50%;
+			width: 38px;
+			height: 38px;
+			border: 2px solid #fff;
+		}
+
+		&--instagram a {
+			background: url(../img/icon-instagram.svg) no-repeat center;
+			background-size: 16px 16px;
+		}
+
+		&--facebook a {
+			background: url(../img/icon-facebook.svg) no-repeat center;
+			background-size: 16px 16px;
+		}
+
+		&--vk a {
+			background: url(../img/icon-vk.png) no-repeat center;
+		}
+	}
+}

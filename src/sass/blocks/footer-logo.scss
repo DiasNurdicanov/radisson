@@ -1,0 +1,8 @@
+.footer-logo {
+	margin-bottom: 20px;
+
+	@media (min-width: $desktop-widths) {
+		width: 315px;
+		flex-shrink: 0;
+	}
+}
