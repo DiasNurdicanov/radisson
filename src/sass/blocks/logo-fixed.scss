@@ -1,5 +1,5 @@
 .logo {
-	width: 160px;
+	width: 256px;
 	margin: 0 auto;
 	padding-bottom: 10px;
 
@@ -9,9 +9,5 @@
 
 	img {
 		vertical-align: middle;
-	}
-
-	@media (min-width: $desktop-widths) {
-		width: 256px;
 	}
 }

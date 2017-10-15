@@ -16,6 +16,10 @@ body {
   min-width: 320px;
 }
 
+body.fixed {
+  min-width: 980px;
+}
+
 img {
   max-width: 100%;
   height: auto;

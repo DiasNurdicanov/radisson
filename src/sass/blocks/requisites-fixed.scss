@@ -1,0 +1,13 @@
+.requisites-fixed {
+	display: flex;
+	margin: 30px 0;
+	margin-bottom: 0;
+
+	p {
+		margin: 0;
+	}
+
+	p:first-child {
+		margin-right: 40px;
+	}
+}

@@ -1,0 +1,41 @@
+.complex {
+	padding: 20px 0;
+
+	.container-fixed {
+		display: flex;
+		align-items: flex-start;
+		background: url(../img/bg-complex.png) no-repeat;
+
+		&>* {
+			width: 50%;
+		}
+	}
+
+	&__title {
+		color: #1b1617;
+		font-family: "PT Serif", sans-serif;
+		font-style: italic;
+		font-size: 28px;
+		line-height: 1;
+		margin: 0;
+		margin-bottom: 15px;
+		font-weight: normal;
+	}
+
+	&__desc {
+		padding-top: 56px;
+		padding-left: 10px;
+		font-family: 'Arial', sans-serif;
+		font-size: 13px;
+		color: #231e1f;
+		line-height: 1.3;
+
+		*>first-child {
+			margin-top: 0;
+		}
+
+		*>last-child {
+			margin-bottom: 0;
+		}
+	}
+}

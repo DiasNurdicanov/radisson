@@ -1,0 +1,76 @@
+.additional-services {
+	padding: 20px 0;
+
+	&__title {
+		color: #1b1617;
+		font-family: "PT Serif", sans-serif;
+		font-style: italic;
+		font-size: 28px;
+		line-height: 1;
+		margin: 0;
+		margin-bottom: 15px;
+		font-weight: normal;
+	}
+
+	&__list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.additional-service {
+	width: 50%;
+	border-right: 1px solid #dbdbdb;
+	border-top: 1px solid #dbdbdb;
+	padding: 25px;
+	padding-left: 150px;
+
+	&:nth-child(1),
+	&:nth-child(2) {
+		border-top: none;
+	}
+
+	&:nth-child(2n) {
+		border-right: none;
+		padding-right: 0;
+	}
+
+	&--program {
+		background: url(../img/icon-program.png) no-repeat left center;
+	}
+
+	&--decor {
+		background: url(../img/icon-decor.png) no-repeat 20px center;
+	}
+
+	&--artists {
+		background: url(../img/icon-artists.png) no-repeat 10px center;
+	}
+
+	&--lead {
+		background: url(../img/icon-lead.png) no-repeat 35px center;
+	}
+
+	&__title {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+
+	&__desc {
+		font-family: 'Arial', sans-serif;
+		font-size: 13px;
+		color: #231e1f;
+		line-height: 1.3;
+
+		p {
+			margin: 0;
+		}
+	}
+}

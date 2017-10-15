@@ -1,0 +1,134 @@
+.calculation {
+	border: 3px solid #ed2eb9;
+	padding: 35px;
+	padding-right: 44px;
+	margin-top: 10px;
+
+	&__title {
+		color: #8c8c8c;
+		font-family: "PT Serif", sans-serif;
+		font-style: italic;
+		font-size: 28px;
+		line-height: 1;
+		margin: 0;
+		margin-bottom: 15px;
+		font-weight: normal;
+	}
+
+	&__form {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.text-fields-wrap {
+		width: 535px;
+		margin-right: 15px;
+
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.field-text {
+		width: 325px;
+	}
+
+	.field {
+		margin-bottom: 15px;
+
+		&--date,
+		&--email {
+			width: 295px;
+			margin-right: 15px;
+		}
+
+		&--phone-number,
+		&--guest-count {
+			width: 225px;
+		}
+	}
+
+	input[type="text"],
+	textarea {
+		width: 100%;
+		background: #fff;
+		border: 1px solid #ed2eb9;
+		padding: 12px 17px;
+		line-height: 20px;
+		font-family: 'Arial', sans-serif;
+		font-size: 11px;
+		text-transform: uppercase;
+		color: #ed2eb9;
+	}
+
+	textarea {
+		height: 107px;
+		resize: none;
+	}
+
+	::placeholder {
+		opacity: 1;
+		color: #ed2eb9;
+	}
+
+	.checkboxes-wrap {
+		width: 735px;
+
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.field-checkbox {
+		width: 165px;
+		margin-top: 10px;
+
+		&:nth-child(2),
+		&:nth-child(6) {
+			width: 190px;
+		}
+
+		input[type="checkbox"] {
+			display: none;
+		}
+
+		label {
+			font-family: 'Arial', sans-serif;
+			font-size: 13px;
+			color: #231e1f;
+			line-height: 17px;
+			display: block;
+
+			&::before {
+				content: '';
+				display: inline-block;
+				vertical-align: middle;
+				width: 17px;
+				height: 17px;
+				border: 1px solid #b2b2b2;
+				border-radius: 2px;
+				margin-right: 4px;
+			}
+		}
+
+		input[type="checkbox"]:checked + label::before {
+			border-color: #000;
+		}
+	}
+
+	.submit {
+		width: 140px;
+
+		button {
+			display: block;
+			font-size: 11px;
+			line-height: 1.5;
+			color: #fff;
+			text-transform: uppercase;
+			padding: 20px 25px;
+			background: #ed2eb9;
+			font-family: 'Arial',sans-serif;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+	}
+}

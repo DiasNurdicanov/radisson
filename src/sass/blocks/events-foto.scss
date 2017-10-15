@@ -1,0 +1,52 @@
+.events-foto {
+	padding: 10px 0;
+
+	&__title {
+		color: #1b1617;
+		font-family: "PT Serif", sans-serif;
+		font-style: italic;
+		font-size: 28px;
+		line-height: 1;
+		margin: 0;
+		margin-bottom: 15px;
+		font-weight: normal;
+	}
+
+	&__list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		width: 49%;
+		margin-right: 2%;
+		margin-bottom: 2%;
+		position: relative;
+
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+
+		img {
+			vertical-align: middle;
+		}
+
+		span {
+			position: absolute;
+			z-index: 1;
+			left: 0;
+			bottom: 0;
+			font-family: "PT Serif", sans-serif;
+			font-style: italic;
+			color: #fff;
+			font-size: 20px;
+			line-height: 1;
+			background: #c8af6d;
+			padding: 10px 20px;
+		}
+	}
+}
