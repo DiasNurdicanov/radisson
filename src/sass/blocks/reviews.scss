@@ -1,5 +1,5 @@
 .reviews {
-	padding: 10px 0;
+	padding: 5px 0;
 
 	@media (min-width: $tablet-widths) {
 		padding: 25px 0;
@@ -53,11 +53,15 @@
 		font-size: 14px;
 		font-family: "Arial", sans-serif;
 		border: 1px solid #ea6bc7;
-		padding: 20px;
+		padding: 45px 20px 20px;
 		margin-top: 20px;
 		position: relative;
 		font-style: italic;
 		line-height: 1.25;
+
+		@media (min-width: $tablet-widths) {
+			padding: 20px;
+		}
 
 		&::before {
 			content: '';

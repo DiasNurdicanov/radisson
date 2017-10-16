@@ -82,8 +82,35 @@
 		}
 
 		@media (min-width: $desktop-widths) {
+			margin-right: 50px;
+
 			&::before {
 				width: 50px;
+				background-position: 0 0;
+			}
+
+			&--weddings {
+				margin-right: 55px;
+			}
+
+			&--weddings::before {
+				width: 55px;
+			}
+
+			&--banquets {
+				margin-right: 65px;
+			}
+
+			&--banquets::before {
+				width: 60px;
+			}
+
+			&--birthdays {
+				margin-right: 70px;
+			}
+
+			&--birthdays::before {
+				margin-right: 5px;
 			}
 		}
 	}

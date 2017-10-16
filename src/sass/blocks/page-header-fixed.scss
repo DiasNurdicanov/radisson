@@ -1,14 +1,18 @@
 .page-header-fixed {
-	padding: 30px 0 10px;
+	padding: 25px 0 10px;
 	position: relative;
 
 	.row {
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
+
+		&--vertical-center {
+			align-items: center;
+		}
 	}
 
 	&__right-col {
+		padding-top: 5px;
 		flex-grow: 1;
 		padding-left: 30px;
 	}

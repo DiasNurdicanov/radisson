@@ -1,5 +1,5 @@
 .events-foto {
-	padding: 10px 0;
+	padding: 15px 0;
 
 	&__title {
 		color: #1b1617;
@@ -8,8 +8,9 @@
 		font-size: 28px;
 		line-height: 1;
 		margin: 0;
-		margin-bottom: 15px;
+		margin-bottom: 20px;
 		font-weight: normal;
+		margin-left: -10px;
 	}
 
 	&__list {
@@ -24,11 +25,15 @@
 	&__item {
 		width: 49%;
 		margin-right: 2%;
-		margin-bottom: 2%;
+		margin-bottom: 25px;
 		position: relative;
 
 		&:nth-child(2n) {
 			margin-right: 0;
+		}
+
+		&:nth-last-child(-n + 2){
+			margin-bottom: 0;
 		}
 
 		img {
