@@ -14,10 +14,7 @@
 		vertical-align: middle;
 	}
 
-	@media (min-width: $desktop-widths ) {
-
-		.container {
-			padding: 0 10px;
-		}
+	@media (min-width: $desktop-widths) {
+		padding-bottom: 25px;
 	}
 }

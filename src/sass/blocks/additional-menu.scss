@@ -1,6 +1,6 @@
 .additional-menu {
 	&__list {
-		padding: 20px 0;
+		padding: 17px 0;
 		margin: 0;
 		list-style: none;
 
@@ -10,11 +10,11 @@
 	}
 
 	&__item {
-		width: 180px;
+		width: 175px;
 		margin: 0 auto;
 		margin-bottom: 10px;
 
-		&::last-child {
+		&:last-child {
 			margin-bottom: 0;
 		}
 
@@ -37,6 +37,11 @@
 		@media (min-width: $desktop-widths) {
 			margin-bottom: 0;
 			margin-right: 15px;
+			width: auto;
+
+			a {
+				padding: 0 15px;
+			}
 
 			&::last-child {
 				margin-right: 0;

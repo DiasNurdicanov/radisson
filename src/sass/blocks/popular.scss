@@ -10,8 +10,13 @@
 		font-weight: normal;
 		line-height: 1.25;
 		margin: 0;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 		text-align: center;
+
+		@media (min-width: $tablet-widths) {
+			text-align: left;
+			line-height: 1.15;
+		}
 	}
 
 	&__list {
@@ -26,7 +31,11 @@
 
 	&__item {
 		width: 300px;
-		margin: 0 auto 15px;
+		margin: 0 auto 25px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 
 		@media (min-width: $tablet-widths) {
 			width: auto;

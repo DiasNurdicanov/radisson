@@ -1,5 +1,9 @@
 .reviews {
-	padding: 20px 0;
+	padding: 10px 0;
+
+	@media (min-width: $tablet-widths) {
+		padding: 25px 0;
+	}
 
 	&__title {
 		text-shadow: 0 0 38px #fff;
@@ -8,7 +12,7 @@
 		font-size: 28px;
 		font-style: italic;;
 		margin: 0;
-		margin-bottom: 10px;
+		margin-bottom: 5px;
 		font-weight: normal;
 	}
 
@@ -18,7 +22,7 @@
 		list-style: none;
 
 		@media (min-width: $tablet-widths) {
-			padding: 0 60px;
+			padding: 0 70px;
 
 			display: flex;
 		}
@@ -36,7 +40,7 @@
 
 	&__author {
 		font-size: 20px;
-		line-height: 1.25;
+		line-height: 1.2;
 		font-weight: 500;
 
 		cite {
@@ -49,7 +53,7 @@
 		font-size: 14px;
 		font-family: "Arial", sans-serif;
 		border: 1px solid #ea6bc7;
-		padding: 30px 20px;
+		padding: 20px;
 		margin-top: 20px;
 		position: relative;
 		font-style: italic;
@@ -67,14 +71,15 @@
 	}
 
 	@media (min-width: $tablet-widths) {
-		width: 31%;
+		width: 31.6%;
+		flex-shrink: 0;
 
 		&:nth-child(n + 2) {
 			display: block;
 		}
 
 		&:nth-child(2) {
-			margin: 0 3.5%;
+			margin: 0 30px;
 		}
 	}
 }
@@ -96,8 +101,7 @@
 		font-size: 0;
 		padding: 0;
 		left: 0;
-		top: 50%;
-		transform: translateY(-50%);
+		top: 54%;
 		cursor: pointer;
 
 		&--next {

@@ -1,8 +1,10 @@
 .lease {
 	background: url(../img/bg-lease.png) no-repeat center -50px;
+	padding-bottom: 20px;
 
 	@media (min-width: $desktop-widths) {
-		padding-top: 20px;
+		padding-top: 30px;
+		padding-bottom: 20px;
 		background: url(../img/bg-lease-big.png) no-repeat center -150px;
 	}
 
@@ -15,18 +17,18 @@
 		text-align: center;
 		margin: 0;
 		font-weight: normal;
-		margin-bottom: 163px;
+		margin-bottom: 140px;
 
 		@media (min-width: $desktop-widths) {
 			font-size: 22px;
-			margin-bottom: 315px;
+			margin-bottom: 300px;
 		}
 	}
 
 	&___yacht-name {
 		display: block;
 		font-size: 32px;
-		line-height: 42px;
+		line-height: 55px;
 
 		@media (min-width: $desktop-widths) {
 			font-size: 42px;
@@ -45,8 +47,10 @@
 	color: #fefeff;
 	font-size: 20px;
 	padding: 20px;
+	padding-bottom: 28px;
 	text-align: center;
 	margin-bottom: 1px;
+	line-height: 1.4;
 
 	@media (min-width: $desktop-widths) {
 		padding: 40px;

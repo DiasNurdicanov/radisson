@@ -1,5 +1,9 @@
 .gallery {
-	padding: 20px 0;
+	padding: 15px 0;
+
+	@media (min-width: $tablet-widths) {
+		padding: 10px 0;
+	}
 
 	&__title {
 		text-shadow: 0 0 38px #fff;
@@ -8,9 +12,13 @@
 		font-size: 28px;
 		font-style: italic;;
 		margin: 0;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 		font-weight: normal;
 		line-height: 1.25;
+
+		@media (min-width: $tablet-widths) {
+			margin-bottom: 23px;
+		}
 	}
 
 	&__list {

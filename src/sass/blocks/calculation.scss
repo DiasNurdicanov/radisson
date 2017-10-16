@@ -110,7 +110,8 @@
 		}
 
 		input[type="checkbox"]:checked + label::before {
-			border-color: #000;
+			background: url(../img/checked.png) no-repeat;
+			background-size: 16px 16px;
 		}
 	}
 

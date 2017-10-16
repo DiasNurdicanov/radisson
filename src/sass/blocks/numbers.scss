@@ -8,16 +8,44 @@
 		text-align: center;
 		line-height: 25px;
 
-		&--row {
+		&:first-child {
+			padding-right: 10px;
+		}
+
+		&:last-child {
+			padding-left: 10px;
+		}
+
+
+		&--row:nth-child(n) {
 			display: block;
 			width: auto;
+			padding-right: 0;
+			padding-left: 0;
+			margin-bottom: 10px;
 		}
 
 		@media (min-width: $desktop-widths) {
 			display: inline-flex;
 			justify-content: flex-start;
 			width: auto;
-			margin-right: 25px;
+			margin-right: 20px;
+			padding: 0;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&--row:nth-child(n)  {
+				margin-right: 45px;
+				margin-bottom: 0;
+				display: inline-flex;
+				justify-content: flex-start;
+			}
+
+			&--row:last-child {
+				margin-right: 0;
+			}
 		}
 	}
 

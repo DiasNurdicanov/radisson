@@ -2,6 +2,8 @@
 	padding: 10px 0;
 
 	@media (min-width: $desktop-widths) {
+		padding: 21px 0;
+
 		.container {
 			display: flex;
 			aligin-items: center;
@@ -44,6 +46,10 @@
 		&:last-child {
 			margin-right: 0;
 		}
+
+		@media (min-width: $desktop-widths) {
+			margin-right: 11px;
+		}
 	}
 
 	&__link {
@@ -72,7 +78,7 @@
 			border-radius: 20px;
 
 			@media (min-width: $desktop-widths) {
-				padding: 5px 20px;
+				padding: 5px 17px;
 			}
 		}
 	}
