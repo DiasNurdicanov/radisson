@@ -1,10 +1,11 @@
 .complex {
-	padding: 15px 0;
+	padding: 15px 0 17px;
 
 	.container-fixed {
 		display: flex;
 		align-items: flex-start;
 		background: url(../img/bg-complex.png) no-repeat;
+		min-height: 307px;
 
 		&>* {
 			width: 50%;
